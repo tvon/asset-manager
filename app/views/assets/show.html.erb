@@ -1,0 +1,26 @@
+
+<div id="asset" class="icon-32 mime-<%= @asset.attachment.content_type.sub /\//, '-' %>">
+  <h3 class="attachment-filename"><%= link_to @asset.attachment.filename, @asset.attachment.public_filename %></h3>
+  <div class="meta">
+    Created <strong><%= time_ago_in_words(@asset.created_at) %> ago</strong> by <%= link_to_user(@asset.creator) %>
+  </div>
+  <% if !@asset.description.blank? %>
+    <div class="description">
+      <%= textilize @asset.description %>
+    </div>
+  <% end %>
+  <!--p>
+    <%= link_to "Download", @asset.attachment.public_filename %>
+  </p-->
+  <dl>
+    <dt>Attachment Link</dt>
+    <dd><%= link_to_attachment @asset %></dd>
+    <% if @asset.public? -%>
+      <dt>Public Asset URL</dt>
+      <dd><%= link_to_asset @asset %></dd>
+    <% end %>
+  </dl>
+
+  <%= link_to 'Edit', edit_asset_path(@asset) %> |
+  <%= link_to 'Back', assets_path %>
+</div>

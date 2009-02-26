@@ -1,0 +1,30 @@
+<% form_for(@asset, :html => {:multipart => :true, :class => 'hform', :id => 'asset-form'}) do |f| %>
+
+  <%= f.error_messages %>
+
+  <p> 
+    <%= f.label :asset, :attachment %>
+    <% if @asset.attachment %>
+      <em><%= "#{@asset.attachment.filename} (#{number_to_human_size @asset.attachment.size})" %> </em>
+    <% end %>
+    
+    <%= file_field_tag :attachment_file %>
+
+  </p> 
+  <p>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </p>
+  <p class="checkbox">
+    <%= f.label :public, "Make Public?" %>
+    <%= f.check_box :public %>
+  </p>
+  <!--p>
+    <%= f.label :pubslug, "Public Slug (identifier)" %>
+    <%= f.text_field :pubslug %>
+  </p-->
+  <p class="controls">
+    <%= f.submit "Submit" %>
+  </p>
+  
+<% end %>

@@ -1,0 +1,12 @@
+
+<div id="asset" class="icon-32 mime-<%= @asset.attachment.content_type.sub /\//, '-' %>">
+  <h3 class="attachment-filename"><%= link_to @asset.attachment.filename, @asset.attachment.public_filename %></h3>
+  <div class="meta">
+    A <%= "#{number_to_human_size @asset.attachment.size} #{@asset.attachment.content_type}" %> created <%= time_ago_in_words(@asset.created_at) %> ago
+  </div>
+  <% if !@asset.description.blank? %>
+    <div class="description">
+      <%= textilize @asset.description %>
+    </div>
+  <% end %>
+</div>

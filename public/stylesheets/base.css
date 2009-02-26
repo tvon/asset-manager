@@ -1,0 +1,59 @@
+@import "forms.css";
+
+body {
+  margin-top: 0;
+}
+
+#page {
+  width: 64em;
+  margin: 0 auto;
+}
+
+#user-bar {
+  height: 1em;
+  padding: 0.5em 1em;
+  text-align: right;
+}
+
+#header {
+  border-bottom: 2px #ccc solid;
+}
+
+#header h1 {
+  font-size: 2em;
+}
+
+#header h1 a {
+  text-decoration: none;
+}
+
+#body {
+  padding-top: 2em;
+}
+
+p.notice {
+  background: #cfc;
+  border: 1px #090 solid;
+  color: #030;
+}
+
+p.warning {
+  background: #fcc;
+  border: 1px #900 solid;
+  color: #300;
+}
+
+#asset h3.attachment-filename {
+  margin-bottom: 0;
+}
+
+#asset .meta {
+  margin-bottom: 1em;
+}
+
+#asset .description {
+  margin: 0 0 1em 0;
+  padding: 1em;
+  border: 1px #999 solid;
+  background: #fcfcfc;
+}

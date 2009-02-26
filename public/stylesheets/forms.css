@@ -1,0 +1,54 @@
+
+
+label { font-weight: bold; }
+
+/* Fieldsets */
+fieldset { padding: 1.4em; margin: 0 0 1.5em 0; border: 1px solid #ddd; }
+legend { padding: 0 .4em; font-weight: bold; font-size: 1.2em; }
+
+/* Textareas */
+textarea { margin: 0.5em 0.5em 0 0; }
+textarea { padding: .4em; }
+
+
+/* hForm
+-------------------------------------------------------------- */
+form.hform p { margin: 0 0 .5em; }
+form.hform p label { float: left; width: 8em; }
+
+form.hform p input { width: 16em; }
+form.hform p select { width: 16em; }
+
+form.hform p input.button { width: auto; }
+form.hform p input.checkbox { width: auto; }
+form.hform p input.radio { width: auto; }
+
+form.hform p.checkbox { margin-left: 8em; }
+form.hform p.checkbox label { float: none; }
+form.hform p.checkbox input { width: auto; }
+form.hform p.controls {
+  text-align: center;
+}
+
+/* vForm
+-------------------------------------------------------------- */
+form.vform p { margin: 0 0 .5em; }
+form.vform p label { display: block; }
+
+form.vform p.checkbox label { display: inline; }
+
+#login-form {
+  width: 24em;
+  border: 1px #999 solid;
+  padding: 1em;
+  margin: 1em auto;
+}
+
+#asset-form {
+  width: 42em;
+  padding: 1em;
+  margin: 1em auto;
+  
+  background: #f0f0f0;
+  border: 1px #999 solid;
+}

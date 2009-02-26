@@ -25,7 +25,8 @@ Rails::Initializer.run do |config|
   # config.gem "bj"
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "aws-s3", :lib => "aws/s3"
-
+  config.gem "RedCloth", :version => '4.0.3 '
+  
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
   # :all can be used as a placeholder for all plugins not explicitly named
@@ -48,8 +49,8 @@ Rails::Initializer.run do |config|
   # Make sure the secret is at least 30 characters and all random, 
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
-    :session_key => '_asset-manager_session',
-    :secret      => 'ff163296c60cc131e897ac24905a09680f80872f6012c1f7963301aeefaf2027d65c226f9cbd1d4f17f5dcd469f7c76c9e70358e10efcc4e6e2189eb1656393c'
+    :session_key => '_assetmanager_session',
+    :secret      => '0a3329ef414212e750bf8e9e093875fd1e25eb7669cfdc4a33e8a23ffe83deeeb0c3de8482236d16c5ad1b3c93f3a220b330747ecd7ef267b009c8c5345b0ec2'
   }
 
   # Use the database for sessions instead of the cookie-based default,
@@ -64,4 +65,6 @@ Rails::Initializer.run do |config|
 
   # Activate observers that should always be running
   # config.active_record.observers = :cacher, :garbage_collector
+  config.active_record.observers = :user_observer
+  
 end

@@ -1,0 +1,21 @@
+.icon-32 {
+  padding-left: 36px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.icon-32.mime-application-pdf {
+  background-image: url(/images/mimetypes/32/application-pdf.png);
+}
+
+.icon-32.mime-text-plain {
+  background-image: url(/images/mimetypes/32/text-x-generic.png);
+}
+
+.icon-32.mime-image-png {
+  background-image: url(/images/mimetypes/32/image-x-generic.png);
+}
+
+.icon-32.mime-image-jpeg {
+  background-image: url(/images/mimetypes/32/image-x-generic.png);
+}
