@@ -1,4 +1,3 @@
 h1. About
 
 This is an application I came up with to solve the problem of non-technical clients wanting to share large files publicly (eg, PDF articles attached to prospect emails) and privately (eg, Illustrator documents swapped around with design firms).
-
