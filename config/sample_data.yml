@@ -1,0 +1,15 @@
+- id: 1
+  login: user
+  name: Joe User
+  email: user@example.com
+  password: password
+  password_confirmation: password
+  state: active
+
+- id: 2
+  login: user2
+  name: Joetoo User
+  email: user2@example.com
+  password: password
+  password_confirmation: password
+  state: active
