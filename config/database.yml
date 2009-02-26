@@ -1,8 +1,6 @@
 production:
-  adapter: mysql
-  username: root
-  password: ap35h17
-  database: assetmanager
+  adapter: sqlite3
+  database: db/production.db
 
 development:
   adapter: sqlite3
