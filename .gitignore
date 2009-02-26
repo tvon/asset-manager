@@ -6,3 +6,4 @@ config/database.yml
 config/deploy.rb
 db/*.sqlite3
 db/*.db
+public/attachments/*

@@ -333,3 +333,145 @@ Errno::ECONNREFUSED (Connection refused - connect(2)):
     script/server:3
 
 Rendering /Users/tvon/Development/assetmanager/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-02-26 18:04:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjQ4ODBmMGE2MWQ2MjM0MDcwNGEwYTU0OTI4MTY4
+YzgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ae1b289ec44654776010edd7bf86cc52300eae13
+  Parameters: {"action"=>"index", "controller"=>"index"}
+Rendering template within layouts/application
+Rendering index/index
+Completed in 0.06092 (16 reqs/sec) | Rendering: 0.00541 (8%) | DB: 0.00102 (1%) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-02-26 18:05:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjQ4ODBmMGE2MWQ2MjM0MDcwNGEwYTU0OTI4MTY4
+YzgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ae1b289ec44654776010edd7bf86cc52300eae13
+  Parameters: {"action"=>"index", "controller"=>"index"}
+Rendering template within layouts/application
+Rendering index/index
+Completed in 0.00305 (327 reqs/sec) | Rendering: 0.00150 (49%) | DB: 0.00091 (29%) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-02-26 18:07:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjQ4ODBmMGE2MWQ2MjM0MDcwNGEwYTU0OTI4MTY4
+YzgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ae1b289ec44654776010edd7bf86cc52300eae13
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.05871 (17 reqs/sec) | Rendering: 0.05473 (93%) | DB: 0.00191 (3%) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-02-26 18:07:39) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjQ4ODBmMGE2MWQ2MjM0MDcwNGEwYTU0OTI4MTY4
+YzgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ae1b289ec44654776010edd7bf86cc52300eae13
+  Parameters: {"user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "login"=>"tvon", "email"=>"tomvons@gmail.com"}, "commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"d4b5af59d9a14c475d7e28eb270c8c59296789a9", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Sent mail to tomvons@gmail.com
+
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:206:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:206:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:206:in `old_open'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:56:in `timeout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:76:in `timeout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:206:in `old_open'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:393:in `do_start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:378:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:316:in `start'
+    /vendor/rails/actionmailer/lib/action_mailer/base.rb:628:in `perform_delivery_smtp'
+    /vendor/rails/actionmailer/lib/action_mailer/base.rb:508:in `__send__'
+    /vendor/rails/actionmailer/lib/action_mailer/base.rb:508:in `deliver!'
+    /vendor/rails/actionmailer/lib/action_mailer/base.rb:383:in `method_missing'
+    /app/models/user_observer.rb:4:in `after_create'
+    /vendor/rails/activerecord/lib/active_record/observer.rb:171:in `send'
+    /vendor/rails/activerecord/lib/active_record/observer.rb:171:in `update'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/observer.rb:185:in `notify_observers'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/observer.rb:184:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/observer.rb:184:in `notify_observers'
+    /vendor/rails/activerecord/lib/active_record/callbacks.rb:309:in `notify'
+    /vendor/rails/activerecord/lib/active_record/callbacks.rb:296:in `callback'
+    /vendor/rails/activerecord/lib/active_record/callbacks.rb:221:in `create_without_timestamps'
+    /vendor/rails/activerecord/lib/active_record/timestamp.rb:29:in `create'
+    /vendor/rails/activerecord/lib/active_record/base.rb:2483:in `create_or_update_without_callbacks'
+    /vendor/rails/activerecord/lib/active_record/callbacks.rb:207:in `create_or_update'
+    /vendor/rails/activerecord/lib/active_record/base.rb:2211:in `save_without_validation'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:911:in `save_without_dirty'
+    /vendor/rails/activerecord/lib/active_record/dirty.rb:75:in `save_without_transactions'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:106:in `save'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:106:in `save'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:118:in `rollback_active_record_state!'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:106:in `save'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:932:in `update_attribute'
+    /vendor/plugins/acts_as_state_machine/lib/acts_as_state_machine.rb:61:in `perform'
+    /vendor/plugins/acts_as_state_machine/lib/acts_as_state_machine.rb:94:in `fire'
+    /vendor/plugins/acts_as_state_machine/lib/acts_as_state_machine.rb:93:in `each'
+    /vendor/plugins/acts_as_state_machine/lib/acts_as_state_machine.rb:93:in `fire'
+    /vendor/plugins/acts_as_state_machine/lib/acts_as_state_machine.rb:201:in `register!'
+    /app/controllers/users_controller.rb:16:in `create'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:579:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Users/tvon/Development/asset-manager/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)

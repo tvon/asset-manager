@@ -4,7 +4,6 @@
   email: user@example.com
   password: password
   password_confirmation: password
-  state: active
 
 - id: 2
   login: user2
@@ -12,4 +11,3 @@
   email: user2@example.com
   password: password
   password_confirmation: password
-  state: active
