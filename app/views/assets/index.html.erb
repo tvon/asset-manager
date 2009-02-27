@@ -1,4 +1,17 @@
 
-<%= render :partial => 'assets/listing', :locals => {:assets => @assets} -%>
+<% if !@public.empty? %>
+
+  <h3>Public Assets</h3>
+
+  <%= render :partial => 'assets/listing', :locals => {:assets => @public} -%>
+
+<% end %>
+
+<% if !@private.empty? %>
+  <h3>Private Assets</h3>
+
+  <%= render :partial => 'assets/listing', :locals => {:assets => @private} -%>
+      
+<% end%>
 
 <%= link_to 'New asset', new_asset_path %>

@@ -8,6 +8,8 @@ class AssetsController < ApplicationController
   # GET /assets.xml
   def index
     @assets = Asset.find(:all)
+    @public = Asset.find(:all, :conditions => {:public => true})
+    @private = Asset.find(:all, :conditions => {:public => false})
 
     respond_to do |format|
       format.html # index.html.erb
